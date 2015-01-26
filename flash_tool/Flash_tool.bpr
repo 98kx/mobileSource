@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="output\Flash_tool.exe"/>
+    <OBJFILES value="output\Flash_tool.obj output\main.obj output\DA_Option.obj 
+      output\tboot_1.obj output\ext_mem1.obj output\OK_Wnd.obj output\about.obj 
+      output\RB_Option.obj output\DL_Go.obj output\RB_Go.obj 
+      output\frm_FormatOption.obj output\frm_BootROMStartCmdRetry.obj 
+      output\com_util.obj output\frm_COM_Option.obj 
+      output\frm_SecuritySetting.obj output\frm_OTPSetting.obj 
+      output\frm_ParameterReadSetting.obj output\BromDLLProcAddr.obj 
+      output\BromDLLWrapper.obj output\Utility.obj output\ConsoleMode.obj 
+      output\XGetopt.obj output\argcargv.obj output\CommandLineArguments.obj 
+      output\Config.obj output\Setting.obj output\XMLDocumentImpl.obj 
+      output\XMLDocument.obj output\XMLNodeImpl.obj output\XMLNode.obj 
+      output\Command.obj output\FlashToolCommand.obj output\Logger.obj 
+      output\MSXML2_TLB.obj"/>
+    <RESFILES value="Flash_tool.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) main.dfm DA_Option.dfm ext_mem1.dfm OK_Wnd.dfm about.dfm 
+      RB_Option.dfm DL_Go.dfm RB_Go.dfm frm_FormatOption.dfm 
+      frm_BootROMStartCmdRetry.dfm frm_COM_Option.dfm frm_SecuritySetting.dfm 
+      frm_OTPSetting.dfm frm_ParameterReadSetting.dfm"/>
+    <LIBFILES value="brom.lib META_DLL.lib SLA_Challenge.lib"/>
+    <LIBRARIES value="vclx.lib bcbsmp.lib vcl.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib bcbsmp.lib vclx.lib"/>
+    <PACKAGES value="rtl.bpi vcl.bpi vclx.bpi bcbsmp.bpi qrpt.bpi dbrtl.bpi vcldb.bpi 
+      bdertl.bpi ibsmp.bpi vcldbx.bpi teeui.bpi teedb.bpi tee.bpi teeqr.bpi 
+      ibxpress.bpi bcbie.bpi vclie.bpi inetdb.bpi inet.bpi nmfast.bpi dclocx.bpi 
+      bcb2kaxserver.bpi DCLUSR.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_CLEAN"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="Flash_tool.cpp"/>
+    <INCLUDEPATH value="$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Include\Atl;BootRom;."/>
+    <LIBPATH value="$(BCB)\lib;$(BCB)\Lib\Obj;."/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I&quot;D:\Program Files\Borland\CBuilder5\Projects\.&quot; 
+      -I&quot;C:\Program Files\Borland\CBuilder5\Projects\.&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -src_suffix cpp -boa"/>
+    <CFLAG1 value="-O2 -H=c:\PROGRA~1\borland\CBUILD~1\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -5 
+      -b -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-N2output -N0output -$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-Ioutput -D&quot;&quot; -H:0x1000000 -Hc:0x1000000 -S:0x1000000 -Sc:0x1000000 -aa 
+      -Tpe -x -Gn -w"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="Flash_tool.cpp" FORMNAME="" UNITNAME="Flash_tool" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Flash_tool.res" FORMNAME="" UNITNAME="Flash_tool.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="main.cpp" FORMNAME="MainForm" UNITNAME="main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DA_Option.cpp" FORMNAME="Form_DA_Option" UNITNAME="DA_Option" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="tboot_1.cpp" FORMNAME="" UNITNAME="tboot_1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ext_mem1.cpp" FORMNAME="ext_mem1Form" UNITNAME="ext_mem1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="OK_Wnd.cpp" FORMNAME="Form_OK" UNITNAME="OK_Wnd" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="about.cpp" FORMNAME="Form_About" UNITNAME="about" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RB_Option.cpp" FORMNAME="Form_RB_Option" UNITNAME="RB_Option" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DL_Go.cpp" FORMNAME="Form_DL_GO" UNITNAME="DL_Go" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RB_Go.cpp" FORMNAME="Form_RB_GO" UNITNAME="RB_Go" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frm_FormatOption.cpp" FORMNAME="FormatOption" UNITNAME="frm_FormatOption" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="brom.lib" FORMNAME="" UNITNAME="brom.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frm_BootROMStartCmdRetry.cpp" FORMNAME="frm_BromStartCmdRetry" UNITNAME="frm_BootROMStartCmdRetry" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="com_util.cpp" FORMNAME="" UNITNAME="com_util" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frm_COM_Option.cpp" FORMNAME="COM_Option" UNITNAME="frm_COM_Option" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="META_DLL.lib" FORMNAME="" UNITNAME="META_DLL.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SLA_Challenge.lib" FORMNAME="" UNITNAME="SLA_Challenge.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frm_SecuritySetting.cpp" FORMNAME="m_SecuritySetting" UNITNAME="frm_SecuritySetting" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frm_OTPSetting.cpp" FORMNAME="m_OTPSetting" UNITNAME="frm_OTPSetting" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frm_ParameterReadSetting.cpp" FORMNAME="m_ParameterReadSetting" UNITNAME="frm_ParameterReadSetting" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BromDLLProcAddr.cpp" FORMNAME="" UNITNAME="BromDLLProcAddr" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BromDLLWrapper.cpp" FORMNAME="" UNITNAME="BromDLLWrapper" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Utility.cpp" FORMNAME="" UNITNAME="Utility" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ConsoleMode.cpp" FORMNAME="" UNITNAME="ConsoleMode" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="XGetopt.cpp" FORMNAME="" UNITNAME="XGetopt" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="argcargv.cpp" FORMNAME="" UNITNAME="argcargv" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CommandLineArguments.cpp" FORMNAME="" UNITNAME="CommandLineArguments" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Config.cpp" FORMNAME="" UNITNAME="Config" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Setting.cpp" FORMNAME="" UNITNAME="Setting" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="XMLDocumentImpl.cpp" FORMNAME="" UNITNAME="XMLDocumentImpl.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="XMLDocument.cpp" FORMNAME="" UNITNAME="XMLDocument.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="XMLNodeImpl.cpp" FORMNAME="" UNITNAME="XMLNodeImpl.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="XMLNode.cpp" FORMNAME="" UNITNAME="XMLNode.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Command.cpp" FORMNAME="" UNITNAME="Command" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FlashToolCommand.cpp" FORMNAME="" UNITNAME="FlashToolCommand" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Logger.cpp" FORMNAME="" UNITNAME="Logger" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MSXML2_TLB.cpp" FORMNAME="" UNITNAME="MSXML2_TLB" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=5
+MinorVer=1112
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1028
+CodePage=950
+
+[Version Info Keys]
+CompanyName=MediaTek Inc.
+FileDescription=Flash Download Tool
+FileVersion=5.1112.0.0
+InternalName=Flash_tool.exe
+LegalCopyright=Copyright (C) 2010 MediaTek Inc. All rights reserved.
+LegalTrademarks=Copyright (C) 2010 MediaTek Inc. All rights reserved.
+OriginalFilename=Flash_tool.exe
+ProductName=Flash Download Tool
+ProductVersion=3.1032.00.00
+Comments=
+
+[Excluded Packages]
+c:\program files\borland\cbuilder6\Bin\dcl31w60.bpl=Delphi 1.0 Compatibility Components
+c:\program files\borland\cbuilder6\Bin\dclado60.bpl=Borland ADO DB Components
+c:\program files\borland\cbuilder6\Bin\dclclxdb60.bpl=Borland CLX Database Components
+c:\program files\borland\cbuilder6\Bin\dclite60.bpl=Borland Integrated Translation Environment
+
+[HistoryLists\hlIncludePath]
+Count=10
+Item0=$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Include\Atl;BootRom;.
+Item1=$(BCB)\include;$(BCB)\include\vcl;BootRom;.
+Item2=$(BCB)\include;$(BCB)\include\vcl;BootRom;.\
+Item3=$(BCB)\include;$(BCB)\include\vcl;BootRom
+Item4=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\PVCS\flash_tool\BootRom
+Item5=$(BCB)\include;$(BCB)\include\vcl;D:\PVCS\flash_tool\BootRom
+Item6=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item7=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\PVCS\BootRom
+Item8=$(BCB)\include;$(BCB)\include\vcl;D:\PVCS\BootRom
+Item9=D:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=9
+Item0=$(BCB)\lib;$(BCB)\Lib\Obj;.
+Item1=$(BCB)\lib;$(BCB)\Lib\Obj;.\
+Item2=$(BCB)\lib;$(BCB)\Lib\Obj
+Item3=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib;$(BCB)\Lib\Obj
+Item4=$(BCB)\lib
+Item5=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item6=$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item7=D:\Program Files\Borland\CBuilder5\Projects;C:\Program Files\Borland\CBuilder5\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item8=D:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=4
+Item0=_CLEAN
+Item1=_CLEAN;_DEBUG
+Item2=_CLEAN;DEBUG_DA
+Item3=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=output
+
+[HistoryLists\hlFinalOutputDir]
+Count=2
+Item0=output\
+Item1=output
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+  </IDEOPTIONS>
+</PROJECT>
