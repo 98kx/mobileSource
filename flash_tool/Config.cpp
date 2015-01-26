@@ -30,7 +30,7 @@ using ConsoleMode::GeneralSetting;
 using XML::Document;
 using XML::Node;
 
-
+// add some commit for git test . shangjing 
 static const wstring DOCUMENT_ROOT_NODE_NAME(L"flashtool-config");
 static const wstring DOCUMENT_VERSION(L"3.0");
 
